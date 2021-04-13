@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="121dp"
+            android:background="#4CAF50"
+            android:text="Counter"
+            android:textColor="@color/purple_700"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/teal_700"
+            android:textSize="76sp" />
+
+        <TextView
+            android:id="@+id/textviewcounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CDDC39"
+            android:text="0"
+            android:textColor="@color/purple_500"
+            android:textSize="142sp" />
+
+        <Button
+            android:id="@+id/buttoncounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:onClick="IncreaseNumber"
+            android:text="CLICK"/>
+
+        <Button
+            android:id="@+id/buttonactivity2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="activity2"
+            android:textSize="38dp"
+            android:onClick="MoveToActivity3"/>
+
+        <Button
+            android:id="@+id/buttonactivity3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="activity3"
+            android:textSize="38dp"
+            android:onClick="MoveToActivity3"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
